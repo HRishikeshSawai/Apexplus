@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(36, 36, 36);
+            margin-left: 5%;
+            color: white;
+        }
+
+        #table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 200%;
+            size: 10px;
+            text-align: center;
+            padding: 5%;
+            
+        }
+
+        td{background-color: rgb(157, 157, 157);
+            border: 1px solid rgb(77, 77, 77);
+            text-align: center;
+            padding: 8px;
+
+        }
+
+        #th {
+            background-color: rgb(101, 101, 101);
+            border: 5px solid rgb(120, 120, 120);
+            text-align: center;
+            padding: 8px;
+        }
+
+        #tr:nth-child(even) {
+        background-color: #dddddd;
+        border: rgb(206, 206, 206);
+        
+        }
+
+        #button{
+            text-align: right;
+        }
+    </style>
+    <title>Home Page</title>
+</head>
+<body>
+    <h3 style="color: white;">Scenario</h3>
+    &nbsp;<select style="background-color: rgb(36,36,36); color: white;">
+        <option></option>
+        <option>Test Scenario</option>
+        <option>My Scenario</option>
+    </select><br><br>
+
+    <table align="center" style="border: white;">
+        <tr>
+            <th>Vehicle Id</th>
+            <th>Vehicle Name</th>
+            <th>Position x</th>
+            <th>Position y</th>
+            <th>Speed</th>
+            <th>Direction</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Bus</td>
+            <td>30</td>
+            <td>215</td>
+            <td>3</td>
+            <td>Toword</td>
+            <td>#</td>
+            <td>Del.</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Car</td>
+            <td>500</td>
+            <td>500</td>
+            <td>5</td>
+            <td>Upword</td>
+            <td>#</td>
+            <td>Del.</td>
+        </tr>
+    </table><br>
+    <div id="button">
+        <button type="start" style="background-color:green; color: white;">Start Simulation</button>
+        <button type="stop" style="background-color:mediumblue; color: white;">Stop Simulation</button>
+    </div><br><br>
+
+    <img src="graph.png">
+</body>
+</html>
